@@ -39,6 +39,7 @@ summary(fit2)
 data(swiss)
 swiss
 library(dplyr)
+#creating dummy variable for catholic.
 swiss<-mutate(swiss,Catholicbin=1*(Catholic>50))
 swiss$Catholicbin<-factor(swiss$Catholicbin)
 fit<-lm(data=swiss,Fertility~Agriculture)
