@@ -3,7 +3,6 @@
 #### link function is log(u)
 #### log(u)=b0+b1x
 #### e(b0+b1x)=u where u is mean or geometric mean for outocomes.
-
 library(ggplot2)
 gaData$julian<-julian(gaData$date)
 head(gaData)
